@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeframever	6.18
+%define		kdeframever	6.19
 %define		qtver		5.15.2
 %define		kfname		kpty
 
 Summary:	Interfacing with pseudo terminal devices
 Name:		kf6-%{kfname}
-Version:	6.18.0
+Version:	6.19.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/frameworks/%{kdeframever}/%{kfname}-%{version}.tar.xz
-# Source0-md5:	5a5f71d4536c948a9010a09353ab9af8
+# Source0-md5:	5a7092605afcaf60e9b79aeaecf3177c
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Test-devel >= %{qtver}
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc README.md
 %ghost %{_libdir}/libKF6Pty.so.6
-%attr(755,root,root) %{_libdir}/libKF6Pty.so.*.*
+%{_libdir}/libKF6Pty.so.*.*
 %{_datadir}/qlogging-categories6/kpty.categories
 
 %files devel
