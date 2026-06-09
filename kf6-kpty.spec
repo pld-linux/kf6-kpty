@@ -40,6 +40,11 @@ This library provides primitives to interface with pseudo terminal
 devices as well as a KProcess derived class for running child
 processes and communicating with them using a pty.
 
+%description -l pl.UTF-8
+Ta biblioteka dostarcza podstawy interfejsu dla pseudoterminali a
+także klasę wywiedzioną z KProcess do uruchamiania procesów potomnych
+i komunikowania się z nimi przy użyciu "pty".
+
 %package devel
 Summary:	Header files for %{kfname} development
 Summary(pl.UTF-8):	Pliki nagłówkowe dla programistów używających %{kfname}
